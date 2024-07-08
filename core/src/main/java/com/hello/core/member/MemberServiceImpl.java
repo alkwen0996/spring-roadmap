@@ -9,8 +9,8 @@ public class MemberServiceImpl implements MemberService {
     private final MemberRepository memberRepository;
 
     @Autowired
-    public MemberServiceImpl(final MemberRepository memberRepository) {
-        this.memberRepository = memberRepository;
+    public MemberServiceImpl(final MemoryMemberRepository memoryMemberRepository) {
+        this.memberRepository = memoryMemberRepository;
     }
 
     @Override

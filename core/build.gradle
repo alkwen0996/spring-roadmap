@@ -25,8 +25,10 @@ repositories {
 }
 
 dependencies {
+	implementation 'javax.inject:javax.inject:1'
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	runtimeOnly 'com.mysql:mysql-connector-j'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
