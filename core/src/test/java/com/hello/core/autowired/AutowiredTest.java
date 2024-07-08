@@ -16,7 +16,7 @@ public class AutowiredTest {
 
     static class TestBean {
 
-        @Autowired(required = false) // member1이 스프링 빈이 아니기 때문에 주입할 대상이 없어서 아예 호출안됨
+        @Autowired(required = false) // member1이 스프링 빈이 아니기  때문에 주입할 대상이 없어서 아예 호출안됨
         public void setNoBean1(Member member1) {
             System.out.println("member1 = " + member1);
         }
